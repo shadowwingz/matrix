@@ -11,6 +11,11 @@ dependencies {
     implementation project(':matrix-arscutil')
     implementation "org.jetbrains.kotlin:kotlin-stdlib:${gradle.KOTLIN_VERSION}"
 }
+
+processResources {
+    duplicatesStrategy(DuplicatesStrategy.EXCLUDE)
+}
+
 sourceSets {
     main {
         java {
